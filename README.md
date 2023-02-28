@@ -30,5 +30,5 @@ The design of this page is realized with :
 
 ## Below a screenshot allowing to realize the design .
 
-![](./lol1.png)
-![](./lol1.png)
+![](./src/lol1.png)
+![](./src/lol2.png)
