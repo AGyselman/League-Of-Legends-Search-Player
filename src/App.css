@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --whitesmoke: #F9F9F9;
+  --light-grey: #ECECEC;
+  --grey: #c4c4c4;
+  --medium-gray: #a7a7a7;
+  --deep-gray: #343434;
+  --black: #000000;
+  --blue: #1b77f3;
+  --red: #cf3c3f;
+}
+
+main {
+  display: flex;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  min-height: 100vh;
+  padding: clamp(35px, 8%, 70px);
+  justify-content: space-between;
+  background-color: var(--white);
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-logo {
+  width: 130px;
+  margin-bottom: 80px;
+}
+
+.login-title {
+  color: var(--deep-gray);
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.login-label {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.login-icons {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.login-icons img {
+  width: 20px;
+}
+
+.icons-button {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.login-icons .icons-button:nth-child(1) {
+  background-color: var(--blue);
+}
+.login-icons .icons-button:nth-child(2) {
+  background-color: var(--light-grey);
+}
+.login-icons .icons-button:nth-child(3) {
+  background-color: var(--black);
+}
+
+.login-label-checkbox {
+  width: 100%;
+  margin: 15px 0;
+  font-size: 0.9em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.input-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;background-color: var(--light-grey);
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+.input-checkbox:checked {
+  background-color: var(--red);
+}
+.input-checkbox:checked::after {
+  content: "";
+  width: 5px;
+  height: 10px;
+  border: 3px solid white;
+  margin: 2px 6px;
+  display: block;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.input {
+  width: 100%;
+  background-color: var(--light-grey);
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.9em;
+  padding: 25px 10px 10px;
+  font-weight: 600;
+  color: var(--deep-gray);
+}
+
+.login-label span {
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--medium-gray);
+  margin: 20px;
+  cursor: text;
+  transition: all 200ms ease;
+}
+
+.login-label .span-active {
+  font-size: 0.7em;
+  margin: 8px 10px;
+}
+
+.input:focus {
+  background-color: var(--whitesmoke);
+  border: 2px solid var(--deep-gray);
+}
+
+.login-button {
+  width: 70px;
+  height: 60px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--red);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+.login-button svg {
+  fill: white;
+}
+
+/* .wallpaper {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+} */
+
+.containerData {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./bg3.png) ;
+  background-size: cover;  
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* filter: blur(5px);
+  -webkit-filter: blur(5px); */
+}
+.containerData p {
+  text-transform: uppercase;
+  color: rgb(10, 10, 12);
+  font-weight: bold;
+  font-size: 21px;
+  margin: 50px;
+}
+.containerData img {
+  background-size: var(--blue);
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+/* .login-button:disabled {
+  cursor: auto;
+  background-color: white;
+  border: 2px solid var(--light-grey);
+}
+.login-button:disabled svg {
+  fill: var(--grey);
+} */
+
+
+
+/*Design BTN*/
+/* .btn {
+  font-family: 'Marcellus SC', serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px 15px; 
+  background: #1e2328;
+  color: #cdbe91;
+  box-shadow: inset 0 0 2px #000000;
+  border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29);
+  border-image-slice: 1;
+  border-width: 2px;
+}
+.btn:hover {
+  text-shadow: 0 0 5px #ffffff80;
+  box-shadow: 0 0 8px 0 #ffffff50;
+  background: linear-gradient(to bottom, #1e2328, #433d2b);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.btn:active {
+  text-shadow: none;
+  box-shadow: none;
+  color: #cdbe9130;
+}
+
+.btninput {
+  padding: 100px;
+  align-items: center;
+} */
+/*Design BTN*/
+
+
